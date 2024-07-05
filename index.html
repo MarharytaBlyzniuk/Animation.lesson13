@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Animation</title>
+</head>
+<body>
+<section class="section">
+    <!-------'ОВАЛ'-------->
+    <div class="oval center">
+        <svg width="400" height="70" viewBox="0 0 500 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="oval--yellow"
+                  d="M470.5 49.5C470.5 52.0498 469.277 54.7935 466.408 57.7283C463.53 60.6718 459.157 63.6315 453.306 66.527C441.613 72.3131 424.531 77.594 403.219 82.0548C360.634 90.9678 301.689 96.5 236.5 96.5C171.311 96.5 112.366 90.9678 69.7814 82.0548C48.4687 77.594 31.387 72.3131 19.6941 66.527C13.843 63.6315 9.47029 60.6718 6.59245 57.7283C3.72315 54.7935 2.5 52.0498 2.5 49.5C2.5 46.9502 3.72315 44.2065 6.59245 41.2717C9.47029 38.3282 13.843 35.3685 19.6941 32.473C31.387 26.6869 48.4687 21.406 69.7814 16.9452C112.366 8.03218 171.311 2.5 236.5 2.5C301.689 2.5 360.634 8.03218 403.219 16.9452C424.531 21.406 441.613 26.6869 453.306 32.473C459.157 35.3685 463.53 38.3282 466.408 41.2717C469.277 44.2065 470.5 46.9502 470.5 49.5Z"
+                  fill="#3ACC2D" stroke="#9AA3F4" stroke-width="5"/>
+        </svg>
+
+    </div>
+
+    <!-----'ПРЯМОУГОЛЬНИК'!------>
+    <div class="rectangle center">
+        <svg width="500" height="100" viewBox="0 0 287 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.5" y="2.5" width="282" height="65" fill="url(#paint0_linear_1_4)" stroke="#800983"
+                  stroke-width="5"/>
+            <defs>
+                <linearGradient id="paint0_linear_1_4" x1="0" y1="35" x2="287" y2="35" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#E9109F"/>
+                    <stop offset="1" stop-color="#800983"/>
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+</section>
+
+
+<section class="line">
+    <!------'окружность'----->
+    <div class="circle center">
+        <svg class="line__circle__item" width="200" height="200" viewBox="0 0 200 200" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="97.5" fill="url(#paint0_radial_1_5)" stroke="#FF7E21" stroke-width="5"/>
+            <defs>
+                <radialGradient id="paint0_radial_1_5" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(100 100) rotate(90) scale(100)">
+                    <stop stop-color="red"/>
+                    <stop offset="1" stop-color="yellow">
+                        <animate attributeName="offset"
+                                 from="0" to="1" dur="5s"
+                                 repeatCount="1" fill="freeze"/>
+                    </stop>
+                </radialGradient>
+
+            </defs>
+        </svg>
+    </div>
+
+
+    <!------'КВАДРАТ'!----->
+    <div class="square center">
+        <svg width="149" height="149" viewBox="0 0 149 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_1_3)">
+                <rect x="4" width="141" height="141" fill="url(#paint0_linear_1_3)"/>
+                <rect x="6.5" y="2.5" width="136" height="136" stroke="#12078F" stroke-width="5"/>
+            </g>
+            <defs>
+                <filter id="filter0_d_1_3" x="0" y="0" width="149" height="149" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                   result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3" result="shape"/>
+                </filter>
+                <linearGradient id="paint0_linear_1_3" x1="15.7907" y1="141" x2="133.209" y2="3.52155e-06"
+                                gradientUnits="userSpaceOnUse">
+                    <stop offset="0.365533" stop-color="#07D2FF"/>
+                    <stop offset="1" stop-color="#FFE607"/>
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+</section>
+
+
+</body>
+</html>

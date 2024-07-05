@@ -1,0 +1,21 @@
+.rectangle {
+  position: relative;
+  -webkit-animation: slide 3s ease-in-out 1s infinite alternate;
+          animation: slide 3s ease-in-out 1s infinite alternate;
+}
+@-webkit-keyframes slide {
+  from {
+    top: 0;
+  }
+  to {
+    bottom: 100%;
+  }
+}
+@keyframes slide {
+  from {
+    top: 0;
+  }
+  to {
+    bottom: 100%;
+  }
+}

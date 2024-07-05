@@ -1,0 +1,11 @@
+.oval {
+  &:hover {
+    .oval--yellow {
+      fill: lightcyan;
+      stroke: greenyellow;
+      transition: .6s;
+      rotate: 5deg;
+    }
+  }
+}
+

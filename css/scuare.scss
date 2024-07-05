@@ -1,0 +1,13 @@
+@keyframes slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.square {
+  position: relative;
+  animation: slide 3s ease-in-out 1s infinite alternate;
+}

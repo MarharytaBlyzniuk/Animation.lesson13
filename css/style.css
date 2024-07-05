@@ -1,0 +1,61 @@
+body {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.center {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1500px;
+}
+
+.section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.oval:hover .oval--yellow {
+  fill: lightcyan;
+  stroke: greenyellow;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  rotate: 5deg;
+}
+
+@-webkit-keyframes slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+.square {
+  position: relative;
+  -webkit-animation: slide 3s ease-in-out 1s infinite alternate;
+          animation: slide 3s ease-in-out 1s infinite alternate;
+}
